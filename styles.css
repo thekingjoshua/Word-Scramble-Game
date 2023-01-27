@@ -1,0 +1,95 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: Arial;
+	outline: none;
+}
+html {
+	font-size: 62.5%;
+}
+:root {
+	--theme-color: rgb(201, 27, 50);
+	--theme-color2: white;
+}
+body {
+	background-color: var(--theme-color);
+}
+.container {
+	height: 55vh;
+	width: 90%;
+	background-color: var(--theme-color2);
+	position: absolute;
+	top: 45%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	border-radius: 0.7rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.container h2 {
+	font-size: 3rem;
+	padding: 1.5rem 1.5rem 1.5rem;
+	border: none;
+	border-bottom: 0.1px solid gray;
+	width: 90%;
+	text-align: center;
+}
+.container h3 {
+	font-size: 3rem;
+	letter-spacing: 2rem;
+	margin: 1.2rem -2.4rem 0 0;
+	width: 100%;
+	text-align: center;
+}
+.container .hint,
+.time,
+.score {
+	width: 100%;
+	text-align: left;
+	padding: 1.5rem 2rem 0;
+	font-size: 1.5rem;
+}
+input {
+	width: 90%;
+	padding: 1rem;
+	border: 1px solid gray;
+	border-radius: 0.5rem;
+	margin: 1.5rem 0 0;
+}
+.btn {
+	width: 100%;
+	margin: 4rem 0 0;
+	display: flex;
+	justify-content: space-around;
+}
+button.refresh,
+button.check {
+	padding: 0.7rem 0.7rem;
+	width: 40%;
+	border: none;
+	border-radius: 0.7rem;
+	color: var(--theme-color2);
+	background-color: var(--theme-color);
+}
+button:first-child {
+	background-color: gray;
+}
+@media only screen and (min-width: 1024px) {
+	.container {
+		width: 40%;
+	}
+}
+footer {
+	position: absolute;
+	bottom: 7%;
+	width: 100%;
+	text-align: center;
+	color: var(--theme-color2);
+	font-size: 1.5rem;
+}
+footer a {
+	text-decoration: none;
+	color: var(--theme-color2);
+}
